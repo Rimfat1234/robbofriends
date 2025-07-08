@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasu E-Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1> <img src="/elect/image/plasu1.jpeg" alt="" width="" height=""> Students union 
+                government Elections PLASU</h1>
+                <h1><marquee>ELECTION ENDS IN</marquee></h1>
+            <div id="countdown" class="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <label>Days</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <label>Hours</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <label>Minutes</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <label>Seconds</label>
+                </div>
+            </div>
+        </header>
+
+        <!-- Login/Signup Form -->
+        <div id="authSection" class="auth-section">
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button id="loginTab" class="tab-btn active">Login</button>
+                    <button id="signupTab" class="tab-btn">Sign Up</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form active">
+                    <h2>Student Login</h2>
+                    <div class="form-group">
+                        <input type="text" id="loginStudentId" placeholder="Matric number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+
+                <!-- Signup Form -->
+                <form id="signupForm" class="auth-form">
+                    <h2>Student Registration</h2>
+                    <div class="form-group">
+                        <input type="text" id="signupName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="signupStudentId" placeholder="Matric number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="signupEmail" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="signupDepartment" required>
+                            <option value="">Select Department</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Engineering">medical lab</option>
+                            <option value="Business Administration">Business Administration</option>
+                            <option value="Medicine">psychology</option>
+                            <option value="Law">Law</option>
+                            <option value="Arts">sociology</option>
+                            <option value="Arts">chemistry</option>
+                            <option value="Arts">mathematics</option>
+                            <option value="Arts">theatre art</option>
+                            <option value="Arts">public health</option>
+                            <option value="Arts">nursing</option>
+                            <option value="Arts">biochemistry</option>
+                            <option value="Arts">Micro Biology</option>
+                            <option value="Arts">Accounting</option>
+                            <option value="Arts">Geology</option>
+                            <option value="Arts">Geography</option>
+                            <option value="Arts">Agric science</option>
+                            <option value="Arts">Psychology</option>
+                            <option value="Arts">Mass Communication</option>
+                            <option value="Arts">History</option>
+                            <option value="Arts">Political Science</option>
+                            <option value="Arts">Geology</option>
+                            <option value="Arts">Data management</option>
+                            <option value="Arts">Environmental Health</option>
+                            <option value="Arts"></option>
+                            <option value="Arts">information technology</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signupPassword" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signupConfirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Voting Section -->
+        <div id="votingSection" class="voting-section hidden">
+            <div class="voting-header">
+                <h2>CAST YOUR VOTES</h2>
+                <div class="user-info">
+                    <span id="welcomeMessage"></span>
+                    <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+                </div>
+            </div>
+
+            <div class="voting-container">
+                <!-- SUG President -->
+                <div class="voting-category">
+                    <h3>Student Union Government President</h3>
+                    <div class="candidates">
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>NANSOH</h4>
+                                <p>Experienced leader with vision for student welfare</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="sug" value="Nansoh" id="sug-nansoh">
+                            <label for="sug-nansoh" class="vote-btn">Vote</label>
+                        </div>
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>NANKPAK</h4>
+                                <p>Erra of transformation and illumination</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="sug" value="Nankpak" id="sug-nankpak">
+                            <label for="sug-nankpak" class="vote-btn">Vote</label>
+                        </div>
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>ZWALNAN</h4>
+                                <p>Committed to transparency and accountability</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="sug" value="Zwalnan" id="sug-zwalnan">
+                            <label for="sug-zwalnan" class="vote-btn">Vote</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vice President -->
+                <div class="voting-category">
+                    <h3>VICE PRESIDENT</h3>
+                    <div class="candidates">
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>CLEOPHAS GUNGSHIK JOHN</h4>
+                                <p>Deputy leadership with strong academic background</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="vp" value="Nansoh" id="vp-nansoh">
+                            <label for="vp-nansoh" class="vote-btn">Vote</label>
+                        </div>
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>LUCKY MASARA FRANCIS</h4>
+                                <p>Service to humanity</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="vp" value="Nankpak" id="vp-nankpak">
+                            <label for="vp-nankpak" class="vote-btn">Vote</label>
+                        </div>
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>SETH AGOG</h4>
+                                <p>Focus on student activities and engagement</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="vp" value="Zwalnan" id="vp-zwalnan">
+                            <label for="vp-zwalnan" class="vote-btn">Vote</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secretary -->
+                <div class="voting-category">
+                    <h3>Secretary</h3>
+                    <div class="candidates">
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>GRACE NDAM</h4>
+                                <p>Excellent organizational and communication skills</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="secretary" value="Nansoh" id="sec-nansoh">
+                            <label for="sec-nansoh" class="vote-btn">Vote</label>
+                        </div>
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>Nankpak</h4>
+                                <p>Detail-oriented with record-keeping expertise</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="secretary" value="Nankpak" id="sec-nankpak">
+                            <label for="sec-nankpak" class="vote-btn">Vote</label>
+                        </div>
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>GBEFUK MWAN</h4>
+                                <p>Efficient documentation and meeting management</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="secretary" value="Zwalnan" id="sec-zwalnan">
+                            <label for="sec-zwalnan" class="vote-btn">Vote</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treasurer -->
+                <div class="voting-category">
+                    <h3>Treasurer</h3>
+                    <div class="candidates">
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>MOSES MANDO</h4>
+                                <p>Financial management and budgeting expertise</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                                
+                            </div>
+                            <input type="radio" name="treasurer" value="Nansoh" id="treas-nansoh">
+                            <label for="treas-nansoh" class="vote-btn">Vote</label>
+                        </div>
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>Nankpak</h4>
+                                <p>Transparent financial reporting and accountability</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+
+                            </div>
+                            <input type="radio" name="treasurer" value="Nankpak" id="treas-nankpak">
+                            <label for="treas-nankpak" class="vote-btn">Vote</label>
+                        </div>
+                        <div class="candidate-card">
+                            <div class="candidate-info">
+                                <h4>HANNAH DAVID</h4>
+                                <p>Strategic financial planning for student welfare</p>
+                                <img src="/elect/image/ns1.jpg" alt="" width="150px" height="100px">
+                            </div>
+                            <input type="radio" name="treasurer" value="Zwalnan" id="treas-zwalnan">
+                            <label for="treas-zwalnan" class="vote-btn">Vote</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit-section">
+                    <button id="submitVote" class="btn btn-success">Submit Vote</button>
+                    <button id="resetVote" class="btn btn-warning">Reset Selections</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="resultsSection" class="results-section hidden">
+            <h2>Election Results</h2>
+            <div id="resultsContainer"></div>
+        </div>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="success-message hidden">
+            <div class="success-content">
+                <h3>Vote Submitted Successfully! thank you</h3>
+                <p>Thank you for participating in the Student Union Government Elections.</p>
+                <button id="viewResults" class="btn btn-primary">View Results</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
