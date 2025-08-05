@@ -162,7 +162,7 @@ function showVotingSection() {
     resultsSection.classList.add('hidden');
     
     // Update welcome message
-    document.getElementById('welcomeMessage').textContent = `Welcome, ${currentUser.name}`;
+    document.getElementById('welcomeMessage').textContent = `WELCOME, ${currentUser.name}!!!`;
     
     // Check if user has already voted
     if (hasVoted.includes(currentUser.studentId)) {
@@ -288,7 +288,8 @@ function displayResults() {
         'sug': 'Student Union Government President',
         'vp': 'Vice President',
         'secretary': 'Secretary',
-        'treasurer': 'Treasurer'
+        'treasurer': 'Treasurer',
+        'director': 'director'
     };
     
     let resultsHTML = '';
