@@ -1,0 +1,142 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-bar{
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    justify-content: space-around;
+    background: rgb(3, 27, 73);
+    margin-top:0px;
+    color: white;
+    margin-bottom: 20px;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    margin-right: 30px;
+    padding-bottom: 20%;
+}
+#teaching{
+    margin-right: 80%;
+}
+.about{
+    margin-bottom: 20%;
+}
+input{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 0.5rem;
+    justify-content: center;
+    margin-left: 40%;
+    width: 250px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    justify-content: center;
+    text-align: center;
+}
+img{
+margin-left: 20%;
+}
+button{
+    margin-top: 0%;
+    padding: 20px;
+    width: 20%;
+    justify-items: center;
+    border-radius: 0.5rem;
+    align-items: center;
+    margin-left: 35%;
+    gap: 0%;
+    justify-content: center;
+    border: 0.05px solid rgb(121, 113, 113);
+}
+select{
+    padding: 13px;
+    margin-left: 44%;
+    width: 190px;
+    font-size: 17px;
+    border-radius: 0.5rem;
+}
+#sign-in{
+    margin-left: -0.02px;
+}
+button a{
+    text-decoration: none;
+    color:black;
+}
+#educational{
+    margin-left: 0%;
+}
+p{
+    margin-left: 90px;
+    font-size: 20px;
+    width: 90%;
+    padding-top: 20px;
+}
+span{
+    font-size: 50px;
+    color: rgb(249, 250, 252);
+}
+h2{
+    text-align: center;
+}
+h3{
+    margin-left: 25%;
+}
+.footer{
+    background: rgb(3, 27, 73);
+}
+.footer p{
+        padding-top: 20px;
+        text-align: center;
+        color: white;
+}
+video{
+    justify-content: space-around;
+    margin-left: 25%;
+}
+#btn{
+    margin-left: 23%;
+    font-size: 19px;
+    width: 120px;
+    cursor: pointer;
+    margin-top: 0%;
+}
+#btn:hover{
+    background: rgb(8, 180, 223);
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    font-size: 16px;
+    padding-top: 15px;
+  }
+  .nav-bar a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  input, select {
+    margin-left: 10%;
+    width: 80%;
+  }
+  button {
+    margin-left: 10%;
+    width: 80%;
+  }
+  p, h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 16px;
+  }
+  img, video, audio {
+    margin-left: 5%;
+    width: 90%;
+    padding: 10px 0;
+  }
+}

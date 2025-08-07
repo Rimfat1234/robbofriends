@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 23px;
+}
+.nav-bar h1{
+    margin-bottom: 0px;
+}
+input{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 0.5rem;
+    justify-content: center;
+    margin-left: 40%;
+    width: 250px;
+}
+.click{
+    justify-content: center;
+    display: flex;
+    gap: 1%;
+    
+}
+h1{
+    text-align: center;
+}
+h3{
+    justify-content: center;
+    text-align: center;
+}
+img{
+justify-content: space-between;
+padding: 54px;
+}
+.image{
+    margin-left: 20%;
+}
+button{
+    margin-top: 20px;
+    width: 90px;
+    padding: 10px;
+    justify-items: center;
+    border-radius: 0.5rem;
+    align-items: center;
+    margin-left: 90px;
+    gap: 2%;
+    justify-content: center;
+    border: 1px solid rgb(63, 38, 38);
+}
+#sign-in{
+    margin-left: -0.02px;
+}
+button a{
+    text-decoration: none;
+    color:black;
+}
+p{
+    margin-left: 90px;
+    font-size: 20px;
+    width: 90%;
+    padding-top: 20px;
+}
+span{
+    font-size: 50px;
+    color: rgb(7, 95, 228);
+}
+h2{
+    text-align: center;
+}
+h3{
+    margin-left: 25%;
+}
+.footer{
+    background: rgb(0, 0, 0);
+}
+.footer p{
+        padding-top: 20px;
+        text-align: center;
+        color: white;
+}
+video{
+    justify-content: space-around;
+    margin-left: 25%;
+}
+audio{
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
