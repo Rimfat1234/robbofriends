@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nansohkumkur| Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">🌟MyPortfolio</h1>
+    <nav>
+      <ul>🌟
+        <li onclick="scrollToSection('about')">About</li>
+        <li onclick="scrollToSection('services')">Services</li>
+        <li onclick="scrollToSection('skills')">Skills</li>
+        <li onclick="scrollToSection('education')">Education</li>
+        <li onclick="scrollToSection('projects')">Projects</li>
+        <li onclick="scrollToSection('contact')">Contact</li>🌟
+      </ul>
+    </nav>
+    <div class="toggle-btn" onclick="toggleMode()">🌙</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="about">
+    <div class="hero-text" data-aos="fade-right">
+      <h2>Hi, I’m <span class="highlight">Nansoh Kumkur Rimfat</span> 👋</h2>
+      <h3>A Creative Frontend Developer</h3>
+      <p><span>💻 About Me</span>
+
+<p>I am a Frontend Developer from Kensong Village, Langtang North Local Government, Plateau State, Nigeria, currently pursuing a degree in Computer Science at Plateau State University, Bokkos.
+
+My journey into tech began with curiosity about how websites function, and over time, that curiosity grew into a passion for building modern, interactive, and user-centered web experiences. Today, I specialize in HTML, CSS, JavaScript, and React, creating responsive designs that blend creativity with functionality.
+
+For me, frontend development is not just about writing code — it’s about crafting digital products
+ that are visually appealing, functional, and impactful.</p>
+
+<span>🌟 What I Do Best</span>
+
+<p>Designing modern, responsive, and accessible interfaces
+
+Building clean, scalable, and maintainable codebases
+
+Focusing on performance, aesthetics, and user experience
+
+Transforming ideas into real-world, functional applications</p>
+
+<span>🚀 My Mission</span>
+
+<p>To collaborate with forward-thinking teams and organizations,
+ contributing to projects that create meaningful impact. My goal is to continuously learn, 
+ innovate, and deliver solutions that don’t just meet expectations but exceed them.</p>
+</p>
+      <div class="socials">
+        <a href="https://github.com/Rimfat1234" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/nansoh-kumkur-742774209?" 
+        target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/nansoh kumkur" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/nansoh rimfat" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <button onclick="scrollToSection('contact')">Hire Me</button>
+    </div>
+    <img src="/images/rimz.png" alt="My Photo" width="250px" height="250px">
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-up">
+    <h2>⚡ Skills</h2>
+    <div class="skill-bar">
+      <p>HTML</p>
+      <div class="bar"><span style="width: 95%">95%</span></div>
+    </div>
+    <div class="skill-bar">
+      <p>CSS</p>
+      <div class="bar"><span style="width: 90%">90%</span></div>
+    </div>
+    <div class="skill-bar">
+      <p>JavaScript</p>
+      <div class="bar"><span style="width: 85%">85%</span></div>
+    </div>
+    <div class="skill-bar">
+      <p>React</p>
+      <div class="bar"><span style="width: 80%">80%</span></div>
+    </div>
+    <div class="skill-bar">
+      <p>Python (Backend)</p>
+      <div class="bar"><span style="width: 75%">75%</span></div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" data-aos="fade-up">
+    <h2>🎓 Educational Background</h2>
+    <div class="card">
+      <h3>BSc. Computer Science</h3>
+      <p>Plateau State University, Bokkos
+        undergraduate barcherlor of computer Science
+        from 2020-date, currently a 300 level stuent ,
+         umsergoing my industrial training in a prestigious organization
+        bluehouse technologies
+      </p>
+    </div>
+    <div class="card">
+      <h3>Secondary Education</h3>
+      <p>Foundation Secondary School, Dadur<br>
+      Langtang North Local Government</p>
+    </div>
+    <div class="card">
+      <h3>Primary School</h3>
+      <p>Pillot primary scool Kensong Langtang north, started from 2006-2012<br>
+      certificate obtained, first primary leaving certificate</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" data-aos="fade-up">
+    <h2>💼 Services</h2>
+    <div class="grid">
+      <div class="card">Frontend Development</div>
+      <div class="card">Backend Development</div>
+      <div class="card">Cybersecurity (Ethical Hacking)</div>
+      <div class="card">AI Chatbot Development</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>🚀 Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Netflix Clone</h3>
+        <p>React + TMDB API</p>
+        <a href="https://github.com/yourusername/netflix-clone" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Student Voting System</h3>
+        <p>Fullstack (React + JavaScript)</p>
+        <a href="https://github.com/yourusername/voting-system" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <h3>AI Mobile Chatbot</h3>
+        <p>React Native + JavaScript
+          (js)</p>
+        <a href="https://github.com/yourusername/ai-chatbot" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Business Admin Dashboard</h3>
+        <p>Web + Mobile Integration</p>
+        <a href="https://github.com/yourusername/admin-dashboard" target="_blank" class="btn">View Project</a>
+      
+      </div>
+       <div class="card">
+        <h3>quick delivery website</h3>
+        <p>React Native + JavaScript</p>
+        <a href="https://github.com/Rimfat1234/ai-chatbot" target="_blank" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <h2>📬 Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nansoh Kumkur Rimfat. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
